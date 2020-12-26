@@ -6,4 +6,4 @@ if [ ! -d "venv" ]; then
 fi
 . venv/bin/activate
 pip install -r requirements.txt
-python -m pytest -s -v --html=./Reports/report.html testCases/ --browser chrome
+pytest -s -v --html=./Reports/report.html testCases/ --browser chrome
